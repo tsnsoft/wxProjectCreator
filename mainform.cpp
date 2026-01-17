@@ -385,7 +385,7 @@ void MainForm::OnCreateProject(wxCommandEvent& event)
 		}
 	}
 	else if (templateType == L"Visual Studio") { // Если выбран шаблон Visual Studio
-		wxString slnFilePath = projectPath + L"/vs2022.sln";
+		wxString slnFilePath = projectPath + L"/vs2026.sln";
 		wxString newSlnFilePath = projectPath + L"/" + projectName + L".sln";
 		if (wxFileExists(slnFilePath)) {
 			if (!wxRenameFile(slnFilePath, newSlnFilePath)) {
@@ -394,7 +394,7 @@ void MainForm::OnCreateProject(wxCommandEvent& event)
 			}
 			ReplaceInFile(newSlnFilePath, projectName, wxWidgetsPath, mingwPath);
 		}
-		wxString vcxFilePath = projectPath + L"/vs2022.vcxproj";
+		wxString vcxFilePath = projectPath + L"/vs2026.vcxproj";
 		wxString newVcxFilePath = projectPath + L"/" + projectName + L".vcxproj";
 		if (wxFileExists(vcxFilePath)) {
 			if (!wxRenameFile(vcxFilePath, newVcxFilePath)) {
@@ -595,7 +595,7 @@ void MainForm::ReplaceInFile(const wxString& filePath, const wxString& projectNa
 
 	content.Replace("RPCPP_wx_App", projectName); // Заменяем в тексте файла значение RPCPP_wx_App на имя проекта
 	content.Replace("DialogBlocks_wx_App", projectName); // Заменяем в тексте файла значение DialogBlocks_wx_App на имя проекта
-	content.Replace("vs2022", projectName); // Заменяем в тексте файла значение vs2022 на имя проекта
+	content.Replace("vs2026", projectName); // Заменяем в тексте файла значение vs2026 на имя проекта
 
 	if (!wxWidgetsPath.IsEmpty()) { // Если путь к wxWidgets не пустой
 		content.Replace("D:/Development/RedPanda-CPP/wxWidgets/", wxWidgetsPath); // Заменяем в тексте файла путь к wxWidgets

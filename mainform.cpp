@@ -85,7 +85,7 @@ MainForm::MainForm(wxWindow* parent, wxWindowID id, const wxString& caption, con
 	Create(parent, id, caption, pos, size, style);
 
 	// Инициализация бегущей строки
-	m_originalText = L"✬   -=TSN Soft=-    ✬    г. Павлодар, 2025 г.    ✬ https://github.com/tsnsoft    ";
+	m_originalText = L"✬   -=TSN Soft=-    ✬    г. Павлодар, 2025-2026 г.    ✬ https://github.com/tsnsoft    ";
 	m_offset = 0;
 
 	// Настройка таймера

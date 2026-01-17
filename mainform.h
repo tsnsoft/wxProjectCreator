@@ -50,7 +50,7 @@
 #define ID_PANEL1 10007
 #define PANEL_SCROLL_TEXT 10012
 #define SYMBOL_MAINFORM_STYLE wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX
-#define SYMBOL_MAINFORM_TITLE wxT("wxProjectCreator для wxWidgets 3.3 (ver.10)")
+#define SYMBOL_MAINFORM_TITLE wxT("wxProjectCreator для wxWidgets 3.4 (ver.11)")
 #define SYMBOL_MAINFORM_IDNAME ID_MAINFORM
 #define SYMBOL_MAINFORM_SIZE wxSize(540, 380)
 #define SYMBOL_MAINFORM_POSITION wxDefaultPosition

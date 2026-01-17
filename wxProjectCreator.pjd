@@ -745,7 +745,7 @@
           <long name="proxy-Id value">10000</long>
           <string name="proxy-Implementation filename">"mainform.cpp"</string>
           <string name="proxy-Platform">"&lt;Any platform&gt;"</string>
-          <string name="proxy-Title">"wxProjectCreator для wxWidgets 3.3 (ver.10)"</string>
+          <string name="proxy-Title">"wxProjectCreator для wxWidgets 3.4 (ver.11)"</string>
           <string name="proxy-Tooltip text">""</string>
           <long name="proxy-Width">540</long>
           <bool name="proxy-wxBORDER_THEME">0</bool>
